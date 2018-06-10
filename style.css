@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "M+ 1m";
+	font-style: normal;
+	font-weight: 400;
+	src: url(mplus-1m-regular-sub.eot);
+	src: url(mplus-1m-regular-sub.eot?#iefix) format("embedded-opentype"),
+	    url(mplus-1m-regular-sub.woff) format("woff"),
+	    url(mplus-1m-regular-sub.ttf) format("truetype");
+}
+
+body {
+	font: 400 15px/100% "M+ 1m", sans-serif;
+	background-color: hsl(0, 0%, 15%);
+	color: hsl(40, 100%, 50%);
+	width: calc(100% - 2ch);
+	max-width: 80ch;
+	margin: 1em auto;
+}
+
+header, h1, h2, p {
+	margin: 1em 0;
+}
+
+header, header *, section :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 2em;
+}
+
+header::before, section::before {
+	display: block;
+	overflow: hidden;
+	content: "--------------------------------------------------------------------------------";
+	white-space: nowrap;
+}
+
+header h1 {
+	float: left;
+}
+
+header p {
+	float: right;
+}
+	
+h1, h2 {
+	font: inherit;
+	text-transform: uppercase;
+}
+
+img {
+	border: 1px solid;
+	width: 100%;
+	max-width: 60ch;
+}
+
+a {
+	text-decoration: inherit;
+	color: hsl(220, 100%,70%);
+}
+
+aside > pre {
+	font: inherit;
+	text-align: center;
+}
