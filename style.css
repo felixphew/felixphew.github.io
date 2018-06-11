@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "M+ 1m";
 	font-style: normal;
-	font-weight: 400;
-	src: url(mplus-1m-regular-sub.eot);
-	src: url(mplus-1m-regular-sub.eot?#iefix) format("embedded-opentype"),
-	    url(mplus-1m-regular-sub.woff) format("woff"),
-	    url(mplus-1m-regular-sub.ttf) format("truetype");
+	font-weight: 300;
+	src: url(mplus-1m-light-sub.eot);
+	src: url(mplus-1m-light-sub.eot?#iefix) format("embedded-opentype"),
+	    url(mplus-1m-light-sub.woff) format("woff"),
+	    url(mplus-1m-light-sub.ttf) format("truetype");
 }
 
 body {
-	font: 400 15px/100% "M+ 1m", sans-serif;
+	font: 300 15px/100% "M+ 1m", sans-serif;
 	background-color: hsl(0, 0%, 15%);
 	color: hsl(40, 100%, 50%);
 	width: calc(100% - 2ch);
