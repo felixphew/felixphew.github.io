@@ -1,19 +1,30 @@
 @font-face {
-	font-family: "M+ 1m";
+	font-family: "Concrete Roman";
+	src: url(ccr10.woff2) format(woff2),
+	     url(ccr10.woff) format(woff);
+	font-weight: 400;
 	font-style: normal;
-	font-weight: 300;
-	src: url(mplus-1m-light-sub.eot);
-	src: url(mplus-1m-light-sub.eot?#iefix) format("embedded-opentype"),
-	    url(mplus-1m-light-sub.woff) format("woff"),
-	    url(mplus-1m-light-sub.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Concrete Roman";
+	src: url(ccsl10.woff2) format(woff2),
+	     url(ccsl10.woff) format(woff);
+	font-weight: 400;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: "Computer Modern Typewriter Text";
+	src: url(cmtt10.woff2) format(woff2),
+	     url(cmtt10.woff) format(woff);
+	font-weight: 400;
+	font-style: normal;
 }
 
 body {
-	font: 300 15px/100% "M+ 1m", sans-serif;
-	background-color: hsl(0, 0%, 15%);
-	color: hsl(40, 100%, 50%);
-	width: calc(100% - 2ch);
-	max-width: 80ch;
+	font: 15px/120% "Concrete Roman", serif;
+	max-width: 600px;
 	margin: 1em auto;
 }
 
@@ -21,19 +32,12 @@ header, h1, h2, p {
 	margin: 1em 0;
 }
 
-header, header *, section :first-child {
-	margin-top: 0;
-}
-
 header {
 	height: 2em;
 }
 
-header::before, section::before {
-	display: block;
-	overflow: hidden;
-	content: "--------------------------------------------------------------------------------";
-	white-space: nowrap;
+header, section {
+	border-top: 1px solid;
 }
 
 header h1 {
@@ -42,6 +46,7 @@ header h1 {
 
 header p {
 	float: right;
+	font-style: oblique;
 }
 	
 h1, h2 {
@@ -49,18 +54,25 @@ h1, h2 {
 	text-transform: uppercase;
 }
 
-img {
+section p {
+	text-align: justify;
+}
+
+section img {
+	display: block;
+	box-sizing: border-box;
 	border: 1px solid;
+	padding: 2px;
 	width: 100%;
-	max-width: 60ch;
+	max-width: 400px;
 }
 
 a {
 	text-decoration: inherit;
-	color: hsl(220, 100%,70%);
+	color: hsl(220, 100%,40%);
 }
 
 aside > pre {
-	font: inherit;
+	font-family: "Computer Modern Typewriter Text";
 	text-align: center;
 }
