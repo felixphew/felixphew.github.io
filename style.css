@@ -26,32 +26,38 @@ body {
 	font: 15px/120% "Concrete Roman", serif;
 	max-width: 600px;
 	margin: 1em auto;
+	padding: 0 1em;
 }
 
 header, h1, h2, p {
 	margin: 1em 0;
 }
 
-header {
-	height: 2em;
-}
-
 header, section {
 	border-top: 1px solid;
 }
 
-header h1 {
-	float: left;
-}
+@media (min-width: 400px) {
+	header {
+		height: 2em;
+	}
 
-header p {
-	float: right;
-	font-style: oblique;
+	header h1 {
+		float: left;
+	}
+
+	header p {
+		float: right;
+	}
 }
 	
 h1, h2 {
 	font: inherit;
 	text-transform: uppercase;
+}
+
+header p {
+	font-style: oblique;
 }
 
 section p {
